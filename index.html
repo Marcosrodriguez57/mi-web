@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Marcos - Administrador de Sistemas Informáticos en Red (ASIR). Redes, infraestructura, virtualización y servidores.">
+  <title>Marcos | Administrador de Sistemas y Redes (ASIR)</title>
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header class="header">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="logo" href="#inicio">
+        <span class="logo-bracket">[</span>M<span class="logo-dot">.</span>dev<span class="logo-bracket">]</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+        <li><a href="#habilidades" class="nav-link">Competencias</a></li>
+        <li><a href="#proyectos" class="nav-link">Laboratorios</a></li>
+        <li><a href="#intereses" class="nav-link">Intereses</a></li>
+        <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <div class="hero-container">
+        <div class="badge-status">
+          <span class="pulse-dot"></span>
+          <span>Disponible para Prácticas FCT / Junior SysAdmin</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Construyendo infraestructuras <br>
+          <span class="gradient-text">sólidas, seguras y conectadas</span>.
+        </h1>
+        
+        <p class="hero-description">
+          Hola, soy <strong>Marcos</strong>. Estudiante de 2º de <strong>ASIR</strong> en el IES Francisco De Quevedo. Especializado en administración de servidores, routing & switching y despliegue de servicios en red.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#proyectos">Ver proyectos de red</a>
+          <a class="button button-secondary" href="#contacto">Contactar</a>
+        </div>
+
+        <!-- Terminal decorativa interactiva -->
+        <div class="terminal-preview" aria-hidden="true">
+          <div class="terminal-header">
+            <span class="terminal-btn red"></span>
+            <span class="terminal-btn yellow"></span>
+            <span class="terminal-btn green"></span>
+            <span class="terminal-title">marcos@sysadmin: ~</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> ping -c 3 produccion.local</p>
+            <p class="text-success">64 bytes from 192.168.10.1: icmp_seq=1 ttl=64 time=0.824 ms</p>
+            <p class="text-muted"><span class="prompt">$</span> status --fct-search</p>
+            <p><span class="text-accent">> 2º ASIR activo</span> | Enfoque: Linux, Cisco, Proxmox & Scripting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section class="section" id="sobre-mi">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="eyebrow">01. Perfil profesional</span>
+          <h2>Sobre mí</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Actualmente curso el segundo año de <strong>Administración de Sistemas Informáticos en Red (ASIR)</strong>. Mi foco principal está en entender qué ocurre bajo el capó en cada capa del modelo OSI y cómo orquestar arquitecturas de sistemas fiables.
+            </p>
+            <p>
+              Me caracterizo por ser metódico en la resolución de incidencias (troubleshooting), tener un aprendizaje continuo autodidacta y disfrutar montando entornos de prueba en mi propio homelab.
+            </p>
+            <div class="quick-facts">
+              <div class="fact-item">
+                <span class="fact-label">Ubicación</span>
+                <span class="fact-value">Madrid, España</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Centro</span>
+                <span class="fact-value">IES Francisco De Quevedo</span>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Intereses clave</span>
+                <span class="fact-value">Networking, Linux, Homelabs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Competencias Técnicas -->
+    <section class="section section-dark" id="habilidades">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="eyebrow">02. Stack & Conocimientos</span>
+          <h2>Competencias Técnicas</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <h3>Redes & Comunicaciones</h3>
+            <p>VLANs, Trunking (802.1Q), Enrutamiento estático/dinámico (OSPF), subnetting IPv4/IPv6, ACLs, NAT/PAT y topologías en Cisco Packet Tracer.</p>
+            <div class="tags">
+              <span>Cisco</span><span>Packet Tracer</span><span>VLANs</span><span>OSPF</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">🖥️</div>
+            <h3>Sistemas & Servidores</h3>
+            <p>Despliegue y gestión de entornos Debian/Ubuntu Server y Windows Server (Active Directory, GPOs, DNS, DHCP, Web Nginx/Apache).</p>
+            <div class="tags">
+              <span>Linux Server</span><span>Active Directory</span><span>DNS/DHCP</span><span>SSH</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">📦</div>
+            <h3>Virtualización & Lab</h3>
+            <p>Aislamiento y configuración de máquinas y contenedores para entornos de pruebas seguros y replicables.</p>
+            <div class="tags">
+              <span>VirtualBox</span><span>VMware</span><span>Docker Básico</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">⚡</div>
+            <h3>Automatización & Shell</h3>
+            <p>Creación de scripts para tareas repetitivas, backups locales, auditoría básica de usuarios y comprobación de servicios.</p>
+            <div class="tags">
+              <span>Bash</span><span>PowerShell</span><span>Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos y Laboratorios -->
+    <section class="section" id="proyectos">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="eyebrow">03. Práctica aplicada</span>
+          <h2>Laboratorios y Proyectos</h2>
+        </div>
+
+        <div class="projects-list">
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-num">PROYECTO // 01</span>
+              <span class="status-badge live">Finalizado</span>
+            </div>
+            <div class="project-content">
+              <h3>Infraestructura de Red Corporativa Simulada</h3>
+              <p>
+                Diseño e implementación de red para una empresa departamental con segmentación mediante VLANs (Ventas, IT, Invitados), servidor DHCP centralizado, router-on-a-stick y seguridad en puertos (Port Security).
+              </p>
+              <div class="tags">
+                <span>Packet Tracer</span><span>VLANs</span><span>Inter-VLAN Routing</span><span>DHCP Relay</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-num">PROYECTO // 02</span>
+              <span class="status-badge ongoing">En Proceso</span>
+            </div>
+            <div class="project-content">
+              <h3>Servidor de Servicios en Linux (Debian)</h3>
+              <p>
+                Configuración en entorno virtualizado de un servidor LAMP seguro con cortafuegos UFW, servidor DNS bind9 autoritativo local y automatización de respaldos periódicos mediante scripts en Bash y Cron.
+              </p>
+              <div class="tags">
+                <span>Debian</span><span>Bind9</span><span>UFW</span><span>Bash Scripting</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">
+              <span class="project-num">PROYECTO // 03</span>
+              <span class="status-badge planned">Próximo objetivo</span>
+            </div>
+            <div class="project-content">
+              <h3>HomeLab Autónomo & Servicios Self-Hosted</h3>
+              <p>
+                Montaje de un mini-servidor doméstico con hipervisor Proxmox para levantar contenedores LXC, Pi-hole (bloqueo de publicidad a nivel de red) y VPN Wireguard para acceso remoto cifrado.
+              </p>
+              <div class="tags">
+                <span>Proxmox</span><span>WireGuard</span><span>Pi-hole</span><span>Seguridad</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Intereses -->
+    <section class="section section-dark" id="intereses">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="eyebrow">04. Fuera de la consola</span>
+          <h2>Más sobre mí</h2>
+        </div>
+
+        <div class="interest-grid">
+          <article class="interest-card">
+            <span class="interest-icon">⚽</span>
+            <h3>Fútbol & Deporte</h3>
+            <p>Valoro el trabajo en equipo, la constancia táctica y la sincronización con los compañeros tanto en el campo como en un proyecto técnico.</p>
+          </article>
+
+          <article class="interest-card">
+            <span class="interest-icon">🎮</span>
+            <h3>Gaming Competitivo</h3>
+            <p>Juegos como Fortnite me han enseñado a tomar decisiones bajo presión, comunicarme con claridad y pensar estrategias en tiempo real.</p>
+          </article>
+
+          <article class="interest-card">
+            <span class="interest-icon">🔌</span>
+            <h3>Hardware & Homelab</h3>
+            <p>Me apasiona trastear con componentes, optimizar cableado y entender la arquitectura física detrás de los centros de datos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer y Contacto -->
+  <footer class="footer" id="contacto">
+    <div class="footer-container">
+      <div class="footer-top">
+        <span class="eyebrow">¿Conectamos?</span>
+        <h2>Hablemos de nuevos retos</h2>
+        <p class="footer-subtext">
+          Actualmente en búsqueda de oportunidades formativas y proyectos donde aportar energía y ganas de resolver problemas en entornos de red.
+        </p>
+
+        <div class="contact-box">
+          <span class="contact-email" id="email-text">marcos@example.com</span>
+          <button class="btn-copy" id="btn-copy" title="Copiar correo">
+            Copiar Email
+          </button>
+        </div>
+        <div class="copy-toast" id="copy-toast">¡Correo copiado al portapapeles!</div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Marcos · Estudiante de 2º ASIR · IES Francisco De Quevedo</p>
+        <p>&copy; <span id="year"></span> Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
